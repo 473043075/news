@@ -5,4 +5,5 @@
     <string name="login_registertext">我是新用户</string>
     <string name="register_pwd_txt">请输入密码</string>
     <string name="register_pwd_hinttxt2">请确认密码</string>
+    <string name="dfa">changyuan</string>
 </resources>
