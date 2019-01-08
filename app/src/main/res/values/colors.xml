@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorlocal">#FFD8571B</color>
+    <color name="colorForum">#FFD9B114</color>
+    <color name="colorMe">#FFD81E1B</color>
+    <color name="red">#ffffff</color>
+    <color name="white">#121212</color>
+    <color name="ind_red">#B30E17</color>
+    <color name="blue_light">#00C0E4</color>
+    <color name="material_orange">#ffEF6C00</color>
+    <color name="InActive">#8e8e8e</color>
+    <color name="my_fengexin">#e2dede</color>
+    <color name="my_logobackground">#FFFFFF</color>
+    <color name="fontcolor">#434242</color>
+    <color name="backgroundcolor">#fff</color>
+    <color name="blue">#328fba</color>
+    <color name="gallery_ok">#3bc6f4</color>
+    <color name="transparent">#f2f2f2</color>
+</resources>

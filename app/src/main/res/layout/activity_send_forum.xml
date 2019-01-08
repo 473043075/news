@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActivitySendForum">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="24dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red">
+        <TextView
+
+            android:id="@+id/send_forum_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/send_forum_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="#797979"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="说点什么吧..."
+        android:background="@null"
+        android:padding="10dp" />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/send_forum_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/send_forum"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/iv_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/send_forum_photo"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <!--<GridView-->
+            <!--android:id="@+id/gridView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#ffffff"-->
+            <!--android:listSelector="#00000000"-->
+
+            <!--android:numColumns="3"-->
+            <!--android:scrollbars="vertical" />-->
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:leon="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/record_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftText="地点" />
+
+</LinearLayout>

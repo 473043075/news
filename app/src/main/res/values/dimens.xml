@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Login_layout_Top_fontsize">24sp</dimen>
+    <dimen name="layout_paddingTop">24dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="margin_large">25dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="editTxtSize">18sp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+</resources>

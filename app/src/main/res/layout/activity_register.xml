@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ActivityRegister">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="@dimen/layout_paddingTop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="注册"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/register_img_concer"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/concer" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/register_phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/margin_large"
+        android:orientation="horizontal">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_ph_til"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请输入手机号码">
+
+            <EditText
+                android:id="@+id/register_ph"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="phone"
+                android:textColor="#000"
+                android:textColorHint="#ACB4BF" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <EditText
+
+        android:id="@+id/register_pwd1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/register_phone_ll"
+        android:hint="@string/register_pwd_txt"
+        android:inputType="textPassword"
+        android:textColorHint="#ACB4BF"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"/>
+    <EditText
+        android:id="@+id/register_pwd2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/register_phone_ll"
+        android:hint="@string/register_pwd_hinttxt2"
+        android:inputType="textPassword"
+        android:textColorHint="#ACB4BF"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"/>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="40dp"
+        android:text="下一步"
+        android:background="@drawable/shape_login"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"/>
+
+
+
+
+
+</LinearLayout>

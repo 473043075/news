@@ -1,0 +1,2 @@
+include ':app', ':multi-image-selector1'
+project(':multi-image-selector1').projectDir = new File('multi-image-selector')

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:paddingBottom="4dp"
+        android:paddingTop="@dimen/layout_paddingTop">
+
+        <ImageView
+            android:id="@+id/home_loge"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/homelogo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/homr_layout_search"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/home_search">
+              <ImageView
+                  android:layout_width="25dp"
+                  android:layout_height="25dp"
+                  android:src="@drawable/search"
+                  android:layout_marginLeft="110dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="搜索"
+                    android:textSize="16dp"
+                    android:layout_marginTop="1dp"
+                    />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f2f2f2"
+        app:tabIndicatorColor="@color/ind_red"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/material_orange"
+        app:tabTextAppearance="@style/TabStyle"
+        app:tabTextColor="#595959" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/home_smarte_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <com.scwang.smartrefresh.header.WaterDropHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+
+       <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--
+                   app:tabMode="scrollable" 设置tabMode属性为可以滚动
+                   tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+                   android design library提供的TabLayout控件
+                   tabIndicatorColor：菜单下方移动的横线的颜色
+                   tabSelectedTextColor ：菜单被选中之后的颜色
+                   tabTextColor : 菜单正常的颜色
+                   app:tabTextAppearance : 添加样式，这里加了样式主要是为了在文字前面加一个图所用，就是把textAllCaps设置成false
+               -->
+
+</LinearLayout>

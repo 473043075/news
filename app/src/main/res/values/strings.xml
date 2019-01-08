@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">格致新闻</string>
+    <string name="Login_user_hinttxt">请输入用户名</string>
+    <string name="login_pwd_hinttxt">请输入密码</string>
+    <string name="login_registertext">我是新用户</string>
+    <string name="register_pwd_txt">请输入密码</string>
+    <string name="register_pwd_hinttxt2">请确认密码</string>
+</resources>
